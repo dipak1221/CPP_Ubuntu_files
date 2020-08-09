@@ -1,0 +1,39 @@
+There are 3 types of variable 
+1.ordinary variable
+2.reference variable
+3. Pointer variable
+
+
+1.Ordinary variable= As the name suggest variable is like a simple identifier of user type based on rules of programming 
+IT is use to represent a value .Value can be of single type of multiple type
+
+2.Reference variable is like a another variable which points a value it is should be define while declaring it like int v=12;
+int &ref=v;
+so when we use ref and v it has the same meaning
+It can be of Int,Float, Double and any type....
+
+3. Pointer variable: It is a variable which store the address of another variable 
+like int v=12; int*p= &v 
+pointer can be define after the declaration but it may be crash your program like 
+
+If i declare a pointer int *p;
+and it is not pointing to any one then if we try to print the value of *p then it will show the random value which can lead to crash the program
+
+
+==================================
+
+
+As compare with reference and pointer variable
+
+0.Reference variable cannot be pointer to a literals(ie. 5, eg int &ref=5,)but pointer can do as (int *p;  p=new int;  *p=45 )
+1.Reference should be define at the time of declareing but pointer can be declare without defining;
+2.If a reference variable is pointing to some one then it cannot point to another variable but pointer can do.
+3. A single pointer variable can store multiple value at different time like
+
+void *p;
+int a=12;
+float f=23.2;
+p=&a;
+cout<<*(int*)p<<endl;
+
+4.Java does not need pointer because all the properties of pointer is implement in Reference type of variable so (no pointer needed any more)
