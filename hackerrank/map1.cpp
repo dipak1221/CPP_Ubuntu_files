@@ -9,7 +9,16 @@ int main()
 // freopen("output.txt", "w", stdout);
 #endif
     map<int, int> m;
-
+    // m.insert(make_pair(2, 3));
+    // m.insert(make_pair(4, 5));
+    // m.insert(make_pair(8, 9));
+    m[2] = 12;
+    m[6] = 23;
+    m[23] = 45;
+    for (auto e : m)
+    {
+        cout << e.first << " " << e.second << endl;
+    }
     cout << endl;
     return 0;
 }
