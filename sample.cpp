@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long int
 int main()
 {
     int a[10] = {1, 1, 1, 1, 1, 7, 2, 7, 3, 5};
